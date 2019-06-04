@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "altvec_brain_games"
-version = "0.1.0"
+version = "0.2.0"
 description = "Brain games project on hexlet"
 authors = ["altvec <me@sergeykalistratov.com>"]
 license = "MIT"
@@ -10,6 +10,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
+prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^4.4"
