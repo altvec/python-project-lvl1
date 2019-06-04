@@ -1,9 +1,15 @@
+# -*- coding: utf-8 -*-
+
+"""Program entry point."""
+
 from brain_games.cli import run
 
 
 def main():
+    """Run program."""
     print('Welcome to the Brain Games!')
-    run()
+    greeting = run()
+    print(greeting)
 
 
 if __name__ == '__main__':
