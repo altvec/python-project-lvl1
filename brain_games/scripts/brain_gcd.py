@@ -2,8 +2,8 @@
 
 """Brain gcd game."""
 
+from brain_games.engine import game_engine
 from brain_games.games.brain_gcd import make_question
-from brain_games.scripts.brain_games import game_engine
 
 QUESTION = 'Find the greatest common divisor of given numbers.'
 

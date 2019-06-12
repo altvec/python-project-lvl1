@@ -2,7 +2,7 @@
 
 """Brain gcd game functions."""
 
-from brain_games.games.common import generate_number
+from brain_games.engine import generate_number
 
 
 def make_question():

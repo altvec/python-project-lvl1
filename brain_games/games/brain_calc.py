@@ -4,7 +4,7 @@
 
 from random import choice
 
-from brain_games.games.common import generate_number
+from brain_games.engine import generate_number
 
 
 def sum_numbers(num1, num2):
