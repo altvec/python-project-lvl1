@@ -3,9 +3,14 @@ name = "altvec_brain_games"
 version = "0.7.0"
 description = "Brain games project on hexlet"
 authors = ["altvec <me@sergeykalistratov.com>"]
+repository = "https://github.com/altvec/python-project-lvl1"
 license = "MIT"
 packages = [
     { include = "brain_games" },
+]
+classifiers = [
+    "Topic :: Education",
+    "Topic :: Games/Entertaiment :: Puzzle Games"
 ]
 
 [tool.poetry.dependencies]
