@@ -1,16 +1,15 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """Brain prime game."""
 
-from brain_games.engine import game_engine
-from brain_games.games.brain_prime import make_question
-
-QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+from brain_games.engine import run
+from brain_games.games import brain_prime
 
 
 def main():
     """Run prime game."""
-    game_engine(QUESTION, make_question)
+    run(brain_prime)
 
 
 if __name__ == '__main__':

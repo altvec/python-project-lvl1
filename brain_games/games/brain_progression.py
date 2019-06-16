@@ -4,6 +4,8 @@
 
 from random import choice, randint
 
+DESCRIPTION = 'What number is missing in the progression?'
+
 
 def make_progression():
     """Generate arithemtic progression."""

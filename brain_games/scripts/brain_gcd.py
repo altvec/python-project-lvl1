@@ -1,16 +1,15 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """Brain gcd game."""
 
-from brain_games.engine import game_engine
-from brain_games.games.brain_gcd import make_question
-
-QUESTION = 'Find the greatest common divisor of given numbers.'
+from brain_games.engine import run
+from brain_games.games import brain_gcd
 
 
 def main():
     """Run even game."""
-    game_engine(QUESTION, make_question)
+    run(brain_gcd)
 
 
 if __name__ == '__main__':

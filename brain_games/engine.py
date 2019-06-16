@@ -2,7 +2,6 @@
 
 """Game engine functions."""
 
-import sys
 from random import randint
 
 from brain_games.cli import get_user_answer, get_user_name
@@ -24,37 +23,36 @@ def check_answer(user_answer, correct_answer):
     return (False, message.format(wrong=user_answer, correct=correct_answer))
 
 
-def welcome_user(game_task=None):
-    """Welcome user and print task."""
-    print('Welcome to the Brain Games!')
-    if game_task is None:
-        print('')
-    else:
-        print(game_task, end='\n\n')
+def welcome_user():
+    """Ask user for a name and print greeting."""
     user_name = get_user_name()
     greeting = 'Hello, {user_name}!'.format(user_name=user_name)
-    if game_task is None:
-        print(greeting)
-    else:
-        print(greeting, end='\n\n')
+    print(greeting)
     return user_name
 
 
-def game_engine(game_task, question_and_answer=None):
-    """Game engine."""
-    user_name = welcome_user(game_task)
-    if question_and_answer is None:
-        sys.exit()
+def run(game=None):
+    """Run game."""
+    print('Welcome to the Brain Games!')
+    if game:
+        print(game.DESCRIPTION)
+    print()
+    user_name = welcome_user()
+    if game:
+        print()
+        engine(user_name, game.make_question)
+
+
+def engine(user_name, game):
+    """Game engine process."""
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
-        question, correct_answer = question_and_answer()
+        question, correct_answer = game()
         print(question)
         res, msg = check_answer(get_user_answer(), correct_answer)
-        if res:
-            print(msg)
-            correct_answers += 1
-        else:
-            print(msg)
+        print(msg)
+        if not res:
             print("Let's try again, {user_name}!".format(user_name=user_name))
-            sys.exit()
+            return
+        correct_answers += 1
     print('Congratulations, {user_name}!'.format(user_name=user_name))

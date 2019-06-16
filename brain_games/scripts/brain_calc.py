@@ -1,16 +1,15 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """Brain calc game."""
 
-from brain_games.engine import game_engine
-from brain_games.games.brain_calc import make_question
-
-QUESTION = 'What is the result of the expression?'
+from brain_games.engine import run
+from brain_games.games import brain_calc
 
 
 def main():
     """Run calc game."""
-    game_engine(QUESTION, make_question)
+    run(brain_calc)
 
 
 if __name__ == '__main__':

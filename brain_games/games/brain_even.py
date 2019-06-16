@@ -4,6 +4,8 @@
 
 from brain_games.engine import generate_number
 
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
+
 
 def make_question():
     """Generate game question."""
@@ -15,4 +17,4 @@ def make_question():
 
 def correct_answer(number):
     """Return expected answer."""
-    return 'yes' if number % 2 == 0 else 'no'
+    return 'no' if number % 2 else 'yes'

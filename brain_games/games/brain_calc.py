@@ -2,30 +2,18 @@
 
 """Brain calc game functions."""
 
+import operator
 from random import choice
 
 from brain_games.engine import generate_number
 
-
-def sum_numbers(num1, num2):
-    """Sum of two numbers."""
-    return num1 + num2
-
-
-def sub_numbers(num1, num2):
-    """Subtract one number from another."""
-    return num1 - num2
-
-
-def mult_numbers(num1, num2):
-    """Multiply two numbers."""
-    return num1 * num2
+DESCRIPTION = 'What is the result of the expression?'
 
 
 operations = {
-    '+': sum_numbers,
-    '-': sub_numbers,
-    '*': mult_numbers,
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
 }
 
 
