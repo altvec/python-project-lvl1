@@ -43,11 +43,11 @@ def run(game=None):
         engine(user_name, game.make_question)
 
 
-def engine(user_name, game):
+def engine(user_name, play):
     """Game engine process."""
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
-        question, correct_answer = game()
+        question, correct_answer = play()
         print(question)
         res, msg = check_answer(get_user_answer(), correct_answer)
         print(msg)
