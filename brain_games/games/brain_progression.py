@@ -12,12 +12,9 @@ def make_progression():
     initial_number = randint(1, 100)
     delta = randint(1, 25)
     length = 10
-    progression = []
-    while length:
-        initial_number += delta
-        progression.append(str(initial_number))
-        length -= 1
-    return progression
+    maximum_number = (delta * length) + initial_number
+    prog = [str(num) for num in range(initial_number, maximum_number, delta)]
+    return prog
 
 
 def make_question():
