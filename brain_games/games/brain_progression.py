@@ -25,4 +25,4 @@ def make_question():
         '..' if num == secret else str(num) for num in prog
     ])
     question = 'Question: {progression}'.format(progression=progression)
-    return (question, secret)
+    return (question, str(secret))
