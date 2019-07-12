@@ -13,7 +13,7 @@ def make_progression():
     delta = randint(1, 25)
     length = 10
     maximum_number = (delta * length) + initial_number
-    prog = [str(num) for num in range(initial_number, maximum_number, delta)]
+    prog = range(initial_number, maximum_number, delta)
     return prog
 
 
@@ -21,6 +21,8 @@ def make_question():
     """Generate game question."""
     prog = make_progression()
     secret = choice(prog)
-    progression = ' '.join(['..' if num == secret else num for num in prog])
+    progression = ' '.join([
+        '..' if num == secret else str(num) for num in prog
+    ])
     question = 'Question: {progression}'.format(progression=progression)
     return (question, secret)
