@@ -32,6 +32,6 @@ def make_question():
     num1 = generate_number()
     num2 = generate_number()
     operation = generate_operation()
-    question = 'Question: {n1} {op} {n2}'.format(n1=num1, op=operation, n2=num2)
+    question = f'Question: {num1} {operation} {num2}'
     answer = correct_answer(num1, operation, num2)
     return (question, answer)

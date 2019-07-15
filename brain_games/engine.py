@@ -26,7 +26,7 @@ def check_answer(user_answer, correct_answer):
 def welcome_user():
     """Ask user for a name and print greeting."""
     user_name = get_user_name()
-    greeting = 'Hello, {user_name}!'.format(user_name=user_name)
+    greeting = f'Hello, {user_name}!'
     print(greeting)
     return user_name
 
@@ -52,7 +52,7 @@ def engine(user_name, play):
         res, msg = check_answer(get_user_answer(), correct_answer)
         print(msg)
         if not res:
-            print("Let's try again, {user_name}!".format(user_name=user_name))
+            print(f'Let\'s try again, {user_name}!')
             return
         correct_answers += 1
-    print('Congratulations, {user_name}!'.format(user_name=user_name))
+    print(f'Congratulations, {user_name}!')
