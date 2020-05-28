@@ -13,8 +13,7 @@ def make_progression():
     delta = randint(1, 25)
     length = 10
     maximum_number = (delta * length) + initial_number
-    prog = range(initial_number, maximum_number, delta)
-    return prog
+    return range(initial_number, maximum_number, delta)
 
 
 def make_question():

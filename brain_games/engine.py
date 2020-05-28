@@ -52,7 +52,7 @@ def engine(user_name, play):
         res, msg = check_answer(get_user_answer(), correct_answer)
         print(msg)
         if not res:
-            print(f'Let\'s try again, {user_name}!')
+            print(f"Let's try again, {user_name}!")
             return
         correct_answers += 1
     print(f'Congratulations, {user_name}!')
