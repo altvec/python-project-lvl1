@@ -4,9 +4,26 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3d69ca3b0d9729538fca/test_coverage)](https://codeclimate.com/github/altvec/python-project-lvl1/test_coverage)
 [![Build Status](https://travis-ci.org/altvec/python-project-lvl1.svg?branch=master)](https://travis-ci.org/altvec/python-project-lvl1)
 
-## Demo
 
-[![asciicast](https://asciinema.org/a/ltqzSqet77oAsj63C4JyMOVWB.svg)](https://asciinema.org/a/ltqzSqet77oAsj63C4JyMOVWB)
+This is the first of four training projects on the Python Software Developer course on [Hexlet.io](https://ru.hexlet.io/professions/python/projects/49)
+
+The package contains five simple mathematics quiz games:
+
+- Even check `brain-even`
+- Calculator `brain-calc`
+- Greatest common divider `brain-gcd`
+- Arithmetic progression `brain-progression`
+- Prime number `brain-prime`
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Brain Games.
+
+```bash
+pip install --extra-index-url https://test.pypa.io/en/simple/ altvec-brain-games
+```
+
+## Usage
 
 ### Brain Even
 
