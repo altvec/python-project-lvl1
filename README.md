@@ -3,8 +3,6 @@
 [![Github Actions Status](https://github.com/hexlet-boilerplates/python-package/workflows/Python%20CI/badge.svg)](https://github.com/altvec/python-project-lvl1/actions)
 [![wemake-python-styleguide](https://img.shields.io/badge/style-wemake-000000.svg)](https://github.com/wemake-services/wemake-python-styleguide)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3d69ca3b0d9729538fca/maintainability)](https://codeclimate.com/github/altvec/python-project-lvl1/maintainability)
-[![Build Status](https://travis-ci.org/altvec/python-project-lvl1.svg?branch=master)](https://travis-ci.org/altvec/python-project-lvl1)
-
 
 This is the first of four training projects on the Python Software Developer course on [Hexlet.io](https://ru.hexlet.io/professions/python/projects/49)
 
